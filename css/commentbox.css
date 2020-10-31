@@ -1,0 +1,99 @@
+#HCB_comment_box{
+    border-left:2px solid #EAEDF2;
+    border-right:2px solid #EAEDF2;
+    /*border-radius:5px;*/
+    padding:50px;
+    color:#EAEDF2;
+    background:#EAEDF2;
+
+}
+.hcb-mod b{
+    color:#FC0254
+}
+
+
+/*Zona de 'comentario' */
+
+#HCB_comment_box textarea,#HCB_comment_box input.text{
+    padding:18px 18px;
+    border-top:1px solid #f1f1f1;
+    border-left:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+    background-color:#fff;
+    font-style:italic;
+ /*    width:226.62px; */
+}
+
+#HCB_comment_box .hcb-wrapper-half{
+    display:block;
+    width:100%;
+    float:left
+}
+
+#HCB_comment_box .hcb-wrapper{
+    clear:both
+}
+
+#HCB_comment_box input.text{
+    display:block;
+    width:95%
+}
+
+/*Campo "Nombre" */
+
+#HCB_comment_box input {
+    padding:18px 18px;
+    border-top:1px solid #f1f1f1;
+    border-left:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+/*    margin-left:0; */
+    margin-bottom:18px;
+    background:#fff;
+}
+
+/*Campo 'Nombre' tipo de letra */
+
+#hcb_form_name{
+    font-style:italic
+}
+
+#HCB_comment_box input.submit{
+    padding:18px 85px;
+    display:inline-block;
+    background:#FC0254;
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    border:1px solid #FC0254;
+    cursor:pointer;
+    margin-top:18px
+
+    /*    border-top:15px solid #FC0254;
+    border-left:20px solid #FC0254;
+    border-bottom:15px solid #FC0254;
+    border-right:20px solid #FC0254;
+    background-color:#FC0254;
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer */
+}
+
+#HCB_comment_box div.comment{
+    color:#777272;
+    background:#fff;
+    border:1px solid #f1f1f1;
+    margin:5px;
+    padding:2px
+}
+
+#HCB_comment_box .comment .likes{
+    color:#FC0254
+}
+
+#HCB_comment_box .hcb-link{
+    color:#0088af;
+    text-decoration:none
+}
