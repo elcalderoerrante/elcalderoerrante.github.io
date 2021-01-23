@@ -2435,6 +2435,7 @@ ol {
 		-webkit-transition: 0.3s;
 		transition: 0.3s;
 		text-shadow: 0 1px 3px #000;
+		font-size:larger;
 	}
 	.slicknav_nav a:hover {
 		background: #616169;
