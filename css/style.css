@@ -1663,7 +1663,7 @@ ol {
 .ingredients-item .ingredient-list .list-item .dressing-list ul li {
 	list-style: none;
 	font-size: 16px;
-	color: #353535;
+	color: #dcdcdc;
 	line-height: 36px;
 	position: relative;
 	padding-left: 38px;
@@ -1675,7 +1675,7 @@ ol {
 	top: 14px;
 	width: 9px;
 	height: 9px;
-	background: #000;
+	background: #fff;
 	content: "";
 	border-radius: 50%;
 }
