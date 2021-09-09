@@ -1018,7 +1018,8 @@ pre code{
 .col-lg-7{
       -ms-flex:0 0 58.333333%;
       flex:0 0 58.333333%;
-      max-width:58.333333%
+      max-width:58.333333%;
+      background-color: rgba(0,0,0,0.5);
     }
 .col-lg-8{
       -ms-flex:0 0 66.666667%;

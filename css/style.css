@@ -38,7 +38,9 @@ body {
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	background: none;
+	background-image: url(../img/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 h1,
@@ -48,7 +50,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 400;
 	font-family: "PT Sans", sans-serif;
 }
@@ -79,7 +81,7 @@ h6 {
 
 p {
 	font-size: 15px;
-	color: #353535;
+	color: #dcdcdc;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	line-height: 27px;
@@ -129,6 +131,7 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+
 }
 
 .spad {
@@ -310,10 +313,14 @@ ol {
 -----------------------*/
 
 .header-section {
-/*	padding-top: 65px;
-	padding-bottom: 30px; */
-	padding-top:200px;
-	padding-bottom:60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width:100%;
+
+
+
+/*	padding-top:200px;
+	padding-bottom:60px; */
 }
 
 .header-section .logo {
@@ -326,11 +333,19 @@ ol {
 }
 
 .header-section .nav-menu {
-	position: relative;
+	position: fixed;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	z-index: 2;
+	background-color: black;
+	width: 100%;
+	left:0px;
+
 }
 
 .header-section .nav-menu .main-menu {
 	text-align: center;
+	width: 100%
 }
 
 .header-section .nav-menu .main-menu ul li {
@@ -495,13 +510,13 @@ ol {
 .page-top-recipe .pt-recipe-item.large-item .pt-recipe-text {
 	text-align: center;
 	display: inline-block;
-	background: white;
+	background: #121212;
 	margin-top: -56px;
 	padding-top: 19px;
 	padding-left: 35px;
 	padding-right: 35px;
 	padding-bottom: 30px;
-	z-index: 999;
+	z-index: 1;
 	position: relative;
 }
 
@@ -514,7 +529,7 @@ ol {
 }
 
 .page-top-recipe .pt-recipe-item.large-item .pt-recipe-text h3 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	line-height: 33px;
 }
@@ -564,7 +579,7 @@ ol {
 }
 
 .page-top-recipe .pt-recipe-item .pt-recipe-text h4 {
-	color: #353535;
+	color: #dcdcdc;
 	line-height: 30px;
 	font-weight: 700;
 }
@@ -574,7 +589,7 @@ ol {
 -----------------------*/
 
 .top-recipe {
-	background: #F8F9FB;
+	background: rgba(0,0,0,0.3);
 	padding-bottom: 60px;
 	position: relative;
 }
@@ -797,7 +812,7 @@ ol {
 
 .feature-recipe {
 	position: relative;
-	background: #F8F9FB;
+	background: rgba(0,0,0,0.3);
 	padding-top: 55px;
 	padding-bottom: 55px;
 }
@@ -855,7 +870,7 @@ ol {
 }
 
 .fr-item .fr-item-text h4 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	line-height: 30px;
 	margin-bottom: 10px;
@@ -866,7 +881,7 @@ ol {
 -----------------------*/
 
 .footer-section {
-	background: #EAEDF2;
+	background: #121212;
 	padding-top: 70px;
 }
 
@@ -972,7 +987,7 @@ ol {
 
 .footer-section .copyright-text {
 	font-size: 14px;
-	color: #b8c1d0;
+	color: #dcdcdc;
 	padding-top: 50px;
 	padding-bottom: 8px;
 }
@@ -1464,7 +1479,7 @@ ol {
 }
 
 .recipe-top .recipe-title h2 {
-	color: #353535;
+	color: #dcdcdc;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 48px;
@@ -1490,7 +1505,7 @@ ol {
 }
 
 .ingredients-item {
-	border: 2px solid #F5F6FA;
+/**	border: 2px solid #F5F6FA; */
 	margin-bottom: 20px;
 }
 
@@ -1569,6 +1584,9 @@ ol {
 
 .ingredients-item .ingredient-list {
 	padding: 22px 20px;
+	background-image: url(../img/bg_recipe.jpg);
+	background-size: cover;
+
 }
 
 .ingredients-item .ingredient-list .recipe-btn {
@@ -1594,7 +1612,7 @@ ol {
 }
 
 .ingredients-item .ingredient-list .list-item h5 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 26px;
@@ -1614,7 +1632,7 @@ ol {
 .ingredients-item .ingredient-list .list-item .salad-list ul li {
 	list-style: none;
 	font-size: 16px;
-	color: #353535;
+	color: #dcdcdc;
 	line-height: 36px;
 	position: relative;
 	padding-left: 38px;
@@ -1626,7 +1644,7 @@ ol {
 	top: 14px;
 	width: 9px;
 	height: 9px;
-	background: #000;
+	background: #fff;
 	content: "";
 	border-radius: 50%;
 }
@@ -1711,7 +1729,7 @@ ol {
 }
 
 .recipe-right .recipe-desc h3 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	margin-bottom: 50px;
 }
@@ -1725,14 +1743,14 @@ ol {
 }
 
 .recipe-right .instruction-list h3 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	margin-bottom: 50px;
 }
 
 .recipe-right .instruction-list ul li {
 	list-style: none;
-	color: #353535;
+	color: #dcdcdc;
 	font-size: 15px;
 	line-height: 27px;
 	margin-bottom: 32px;
@@ -1750,13 +1768,13 @@ ol {
 }
 
 .recipe-right .notes h3 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	margin-bottom: 35px;
 }
 
 .recipe-right .notes .notes-item {
-	background: #F5F6FA;
+	background: rgba(0,0,0,1);
 	padding-left: 34px;
 	padding-top: 30px;
 	padding-right: 25px;
@@ -1786,7 +1804,7 @@ ol {
 --------------------------*/
 
 .similar-recipe {
-	background: #353535;
+	background: rgba(0,0,0,0.5);
 	padding-top: 135px;
 	padding-bottom: 60px;
 }
@@ -2047,7 +2065,7 @@ ol {
 }
 
 .about-left .about-title h2 {
-	color: #353535;
+	color: #dcdcdc;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 48px;
@@ -2087,7 +2105,7 @@ ol {
 	font-weight: 700;
 	margin-top: 9px;
 	line-height: 22px;
-	color: #353535;
+	color: #dcdcdc;
 }
 
 .about-right .about-right-add {
@@ -2116,7 +2134,7 @@ ol {
 }
 
 .contact-form h3 {
-	color: #353535;
+	color: #dcdcdc;
 	font-weight: 700;
 	margin-bottom: 55px;
 }
@@ -2419,6 +2437,8 @@ ol {
 		margin: 0;
 		border-radius: 0;
 		background: #FC0254;
+		z-index: 99;
+		position:fixed;
 	}
 	.slicknav_nav {
 		padding-top: 5px;
