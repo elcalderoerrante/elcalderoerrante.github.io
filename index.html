@@ -26,12 +26,22 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
+    <!-- Place your kit's code here Font Awesome -->
+    <script src="https://kit.fontawesome.com/c54c329f51.js" crossorigin="anonymous"></script>
+
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- CSS and JS for Carousel -->
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K141XEEN0"></script>
@@ -55,18 +65,8 @@
     <!-- Header Section Begin -->
 <!--    <header class="header-section set-bg" style="background-color: #000000"> -->
 <!--<header class="header-section set-bg"; style="background-color: #000000; padding-bottom:30px; padding-top:65px;" >  -->
-    <header class="header-section set-bg" data-setbg="img/InicioHeader.jpg">
-
- <!--   <header class="header-section"> -->
+    <header class="header-section">
     <div class="container">
-        <!--  <div class="logo">
-        <!--    <a href="./index.html"><img src="img/Inicio.jpg" alt=""></a>
-  <!--          <a href="./index.html"><img src="img/ElCalderoErranteLogo.png" alt=""></a>
-            <!--  <h1> El Caldero Errante </h1>
-              <br>
-              <h2>Cocina de Aquí y Allá</h2>
-          </div> -->
-
           <div class="nav-menu">
                 <nav class="main-menu mobile-menu">
                     <ul>
@@ -93,22 +93,79 @@
                 </nav>
                 <div class="nav-right search-switch">
                  <!--   <i class="fa fa-search"></i> -->
-          </div>
-    </div>
+               </div>
+             </div>
             <div id="mobile-menu-wrap"></div>
             </div>
 </header>
     <!-- Header End -->
 
- <br>
- <br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+<!-- <div class="container_carousel"> -->
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Indicators -->
+     <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+
+     <!-- Wrapper for slides -->
+     <div class="carousel-inner">
+
+       <div class="item active">
+         <img src="recetas_img/TartaCerezas.jpg" alt="Tarta de Cerezas" style="width:100%;">
+         <div class="carousel-caption">
+            <h3 class="h3_carousel"><a class="h3_carousel" href="TartaCerezas.html">Tarta de Cerezas</a></h3>
+         </div>
+       </div>
+
+       <div class="item">
+         <img src="recetas_img/Brioche.jpg" alt="Brioche" style="width:100%;">
+         <div class="carousel-caption">
+            <h3 class="h3_carousel"><a class="h3_carousel" href="Brioche.html">Brioche</a></h3>
+         </div>
+       </div>
+
+       <div class="item">
+         <img src="recetas_img/RolesCanela.jpg" alt="Roles de Canela" style="width:100%;">
+         <div class="carousel-caption">
+             <h3 class="h3_carousel"><a class="h3_carousel" href="RolesCanela.html">Roles de canela</a></h3>
+         </div>
+       </div>
+     </div>
+
+     <!-- Left and right controls -->
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+       <span class="left_awesome"><i class="fas fa-chevron-circle-left"></i></span>
+       <span class="sr-only">Anterior</span>
+     </a>
+     <a class="right carousel-control" href="#myCarousel" data-slide="next">
+       <span class="right_awesome"><i class="fas fa-chevron-circle-right"></i></span>
+       <span class="sr-only">Siguiente</span>
+     </a>
+   </div>
+ </div>
 
 
-  <!-- Page Top Recipe Section Begin -->
-    <section class="page-top-recipe">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+   <!-- VERSION ANTIGUA Page Top Recipe Section Begin -->
+  <!--  <section class="page-top-recipe">
+
         <div class="container">
-            <div class="row">
 
+            <div class="row">
 
                 <div class="col-lg-6 order-lg-2">
                     <div class="pt-recipe-item large-item">
@@ -176,8 +233,8 @@
         </div>
       </div>
     </div>
-  </section>
-    <!-- Page Top Recipe Section End -->
+  </section> -->
+    <!-- VERSION ANTIGUA Page Top Recipe Section End -->
 
 
     <!-- Top Recipe Section Begin -->
@@ -891,6 +948,8 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

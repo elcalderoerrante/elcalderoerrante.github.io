@@ -87,7 +87,8 @@
       margin-bottom:1rem
     }
   ol ol,ol ul,ul ol,ul ul{
-      margin-bottom:0
+      margin-bottom:0;
+      background-color: rgba(0,0,0,0.5);
     }
   dt{
       font-weight:700
@@ -152,7 +153,9 @@
       overflow:hidden;
       vertical-align:middle
     }
-  table{border-collapse:collapse
+  table{
+    border-collapse:collapse;
+    overflow-y:auto;
     }
   caption{
       padding-top:.75rem;
@@ -2022,12 +2025,15 @@ a.btn.disabled,fieldset:disabled a.btn{
       border-color:#007bff
     }
 .btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
-      color:#fff;
+      color:#000;
       background-color:#0062cc;
-      border-color:#005cbf
+      border-color:#005cbf;
+      position:fixed;
+      overflow-y: auto;
     }
 .btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{
-      box-shadow:0 0 0 .2rem rgba(38,143,255,.5)
+      box-shadow:0 0 0 .2rem rgba(38,143,255,.5);
+      overflow-y: auto;
     }
 .btn-secondary{
       color:#fff;
@@ -2470,26 +2476,27 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 
     }
 .dropdown,.dropleft,.dropright,.dropup{
-      position:relative
+      position:fixed
     }
 .dropdown-toggle{
       white-space:nowrap
     }
 .dropdown-toggle::after{
-      display:inline-block;
+      display:none;
       margin-left:.255em;
       vertical-align:.255em;
       content:"";
       border-top:.3em solid;
       border-right:.3em solid transparent;
       border-bottom:0;
-      border-left:.3em solid transparent
+      border-left:.3em solid transparent;
     }
 .dropdown-toggle:empty::after{
       margin-left:0
+
     }
 .dropdown-menu{
-      position:absolute;
+      position:fixed;
       top:100%;
       left:0;
       z-index:1000;
