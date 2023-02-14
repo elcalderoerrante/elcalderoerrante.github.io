@@ -1,0 +1,915 @@
+/******************************/
+/*       General Styling      */
+/******************************/
+body{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background: url(../img/bg.jpg) no-repeat fixed;
+  background-size: auto;
+  background-size: cover;
+}
+.title h1{
+  color:#C8874D;
+  padding-top: 1.2em;
+  padding-bottom:0.2em;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 4em;
+}
+h4{
+  padding: 0.7em;
+}
+/******************************/
+/*         Preloader          */
+/******************************/
+@-webkit-keyframes blurIn {
+  0% {
+    transform: translate3d(0, -60px, 0) scale(0.9, 2);
+    filter: blur(3px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blurIn {
+  0% {
+    transform: translate3d(0, -60px, 0) scale(0.9, 2);
+    filter: blur(3px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blurOut {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 60px, 0) scale(0.9, 2);
+    filter: blur(3px);
+    opacity: 0;
+  }
+}
+@keyframes blurOut {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 60px, 0) scale(0.9, 2);
+    filter: blur(3px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes pulseEllipsis {
+  0% {
+    box-shadow: -3px 0 0 rgba(127, 101, 68, 0.6), -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+  20% {
+    box-shadow: -3px 0 rgba(127, 101, 68, 0.6), -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 #7f6544;
+  }
+  40% {
+    box-shadow: -3px 0 0 rgba(127, 101, 68, 0.6), -9px 0 0 #7f6544, -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+  60% {
+    box-shadow: -3px 0 0 #7f6544, -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+}
+@keyframes pulseEllipsis {
+  0% {
+    box-shadow: -3px 0 0 rgba(127, 101, 68, 0.6), -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+  20% {
+    box-shadow: -3px 0 rgba(127, 101, 68, 0.6), -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 #7f6544;
+  }
+  40% {
+    box-shadow: -3px 0 0 rgba(127, 101, 68, 0.6), -9px 0 0 #7f6544, -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+  60% {
+    box-shadow: -3px 0 0 #7f6544, -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 rgba(127, 101, 68, 0.6);
+  }
+}
+@-webkit-keyframes fadeInOutLong {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 85% {
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeInOutLong {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 85% {
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+}
+#loader {
+  background: black;
+  font-family: 'Raleway', sans-serif;
+  z-index:999;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top: 50%;
+  padding-top: 15em;
+  left: 50%;
+  text-align: center;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#loader .emoji, #loader .text {
+  -webkit-animation-name: blurIn;
+          animation-name: blurIn;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.58, -0.23, 0.3, 1.3);
+          animation-timing-function: cubic-bezier(0.58, -0.23, 0.3, 1.3);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+#loader .emoji {
+  display: block;
+  font-size: 3.5em;
+  margin-bottom: 0.2em;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+#loader .text {
+  line-height: 1;
+  color: #7F6544;
+  font-size: 20px;
+  margin-right: -14px;
+}
+#loader .text:after {
+  content: "";
+  display: inline-block;
+  background: transparent;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-left: 18px;
+  box-shadow: -3px 0 0 rgba(127, 101, 68, 0.6), -9px 0 0 rgba(127, 101, 68, 0.6), -15px 0 0 rgba(127, 101, 68, 0.6);
+  -webkit-animation: pulseEllipsis 0.8s infinite both ease-in-out;
+          animation: pulseEllipsis 0.8s infinite both ease-in-out;
+}
+#loader .animateOut {
+  -webkit-animation-name: blurOut;
+          animation-name: blurOut;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.58, -0.23, 0.3, 1.3);
+          animation-timing-function: cubic-bezier(0.58, -0.23, 0.3, 1.3);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/******************************/
+/*     Scroll to top button   */
+/******************************/
+#button {
+  display: inline-block;
+  background-color: #D3AB7D;;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #C8874D;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+/******************************/
+/*       Navigation Bar       */
+/******************************/
+.navbar{
+  background-color:black;
+  font-size: 110%;
+}
+.nav-item a{
+  color: black;
+  text-decoration: none;
+}
+.nav-item a:hover{
+  color: black;
+}
+.nav-item a.active{
+  color:#C8874D;
+}
+.nav-item a.active:hover{
+  color:#D3AB7D;
+}
+/****   Dropdown menu   ****/
+.dropdown {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 99;
+}
+.dropdown:hover{
+  background: transparent;
+  color:#D3AB7D;
+  /* cursor: pointer; */
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+.dropdown_menu li {
+  display: none;
+  color: black;
+  background-color: #e9d5be;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+  width: 200%;
+}
+.recetas{
+  z-index: 100;
+}
+.recetas div{
+  display: inline-block;
+}
+.dropdown_menu li:hover {
+  background-color: #C8874D;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.dropdown_menu-5 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: translateX 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: translateX 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: translateX 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: translateX 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: translateX 300ms 300ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-6 {
+  transform-origin: top center;
+  animation: translateX 300ms 360ms ease-in-out forwards;
+}
+.dropdown_menu-5 .dropdown_item-7 {
+  transform-origin: top center;
+  animation: translateX 300ms 420ms ease-in-out forwards;
+}
+
+@-moz-keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-o-keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/****   Hamburguer Menu   ****/
+
+.btn-tog {
+	 position: relative;
+	 padding: 1.5rem;
+}
+ .menu-toggle {
+	 position: absolute;
+	 right: 1.5rem;
+	 top: 49%;
+	 transform: translate(0, -50%);
+	 height: 26px;
+	 width: 29px;
+}
+ .menu-toggle, .menu-toggle:hover {
+	 color: #000;
+}
+ .menu-toggle-bar {
+	 display: block;
+	 position: absolute;
+	 top: 50%;
+	 margin-top: -1px;
+	 right: 0;
+	 width: 100%;
+	 height: 4px;
+	 border-radius: 4px;
+	 background-color: #D3AB7D;
+	 transition: all 0.3s ease;
+}
+ .menu-toggle-bar.menu-toggle-bar--top {
+	 transform: translate(0, -8px);
+}
+ .menu-toggle-bar.menu-toggle-bar--bottom {
+	 transform: translate(0, 8px);
+}
+ .nav-open .menu-toggle-bar.menu-toggle-bar--top {
+	 transform: translate(0, 0) rotate(45deg);
+}
+ .nav-open .menu-toggle-bar.menu-toggle-bar--middle {
+	 opacity: 0;
+}
+ .nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
+	 transform: translate(0, 0) rotate(-45deg);
+}
+
+/****     Search Bar      ****/
+
+.gsc-input{
+  font-size: 1em !important;
+}
+.gsc-input-box{
+  background-color: black !important;
+  border-radius: 8px;
+
+}
+input.gsc-input {
+    background-color: black !important;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+      width: 15em !important;
+}
+.gsst_a .gscb_a{
+  color: white !important;
+}
+.gsc-result-info {
+        display: none !important;
+}
+.gs-title{
+  font-weight:bolder !important;
+  font-size: 1.2em !important;
+  font-family: 'Raleway', sans-serif !important;
+}
+.gs-snippet {
+        font-size: 1.2em !important;
+        font-family: 'Raleway', sans-serif;
+}
+
+.gsc-url-top, .gsc-url-bottom {
+       display: none !important;
+}
+
+/*****************************/
+/****      Carousel       ****/
+/*****************************/
+.carousel-home{
+	background-color: rgba(0,0,0,0);
+	position: relative;
+	padding-top: 80px;
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 30%;
+		background-color: #ddd;
+	}
+}
+#recipe-carousel {
+	.item-details{
+		background-color: #333333;
+		color: #fff;
+		padding: 20px 10px;
+		text-align: left;
+		h5{
+			margin: 0 0 15px;
+			font-size: 18px;
+			line-height: 18px;
+			span{
+				color: red;
+				float:right;
+				padding-right: 20px;
+			}
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	.item {
+			text-align: center;
+			padding: 20px;
+			margin-bottom:80px;
+	}
+}
+.owl-carousel .owl-nav [class*='owl-'] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  width: 50px;
+  height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+  position: absolute;
+  top: 25%;
+	font-size: 20px;
+  /* color: blue; */
+	/* border: 1px solid #ddd; */
+	text-align: center;
+}
+.owl-carousel .owl-prev {
+  left: -1em;
+}
+.owl-carousel .owl-next {
+  right: -1em;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+  background-color: black;
+}
+.carousel-home a{
+  text-decoration: none;
+  font-family: 'Grape Nuts', cursive;
+  /* font-family: 'Caveat', cursive; */
+  color: #FBF6F2;
+  font-size: 1.5em;
+  transition:0.5s;
+}
+.carousel-home a:hover{
+  color: #d8ab82;
+  /* font-size: 1.6em; */
+  transition:0.5s;
+}
+/*******************************/
+/****      Categories       ****/
+/*******************************/
+.main-page-category{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.category-title h2 > a{
+  font-family: 'Homemade Apple', cursive;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #FBF6F2;
+  padding-top: 1em;
+  transition: 0.5s;
+}
+.category-title h2 > a:hover{
+  /* font-size: 1.55em; */
+  color: #d8ab82;
+  transition: 0.5s;
+}
+ section .category-title{
+   border-bottom: solid #C8874D;
+ }
+ .category{
+   padding-top: 3em;
+   padding-bottom: 3em;
+ }
+ .right-bottom-panel{
+   padding-top:0.7em;
+ }
+ .category a{
+   text-decoration: none;
+   font-family: 'Grape Nuts', cursive;
+   /* font-family: 'Caveat', cursive; */
+   color: #FBF6F2;
+   font-size: 1.5em;
+   transition:0.5s;
+ }
+ .category a:hover{
+   color: #d8ab82;
+   /* font-size: 1.6em; */
+   transition:0.5s;
+ }
+ .category .card-title{
+   padding-left: 0;
+ }
+ .category i{
+   font-family: 'Homemade Apple', cursive;
+ }
+/* HOVER ZOOM [1] The container */
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transform-origin: 50% 50%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(80%);
+}
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  filter: brightness(100%);
+  transform: scale(1.2);
+}
+
+/*************************************/
+/****      Category pages         ****/
+/*************************************/
+.category-title h1{
+  border-bottom: solid #C8874D;
+  color: #FBF6F2;
+}
+.item-category{
+  padding-bottom: 4em;
+  padding-right: 4em;
+}
+/*************************************/
+/****      Recipe   pages         ****/
+/*************************************/
+
+.recipe-title h1{
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Grape Nuts', cursive;
+  color: #e9ceb8;
+  font-size: 4em;
+  padding-top: 1em;
+  /* padding-bottom: 1em; */
+}
+.recipe-image{
+  padding-left: 10em;
+  padding-right: 10em;
+  margin-bottom: 4em;
+}
+.recipe-image img{
+  /* border: 2px solid black; */
+}
+.recipe-ingredients{
+  /* border-color: white; */
+  /* border: 2px solid #373737; */
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url('../img/blackboard.jpg');
+  background-size: cover;
+}
+.recipe-ingredients p{
+  /* background-color: blue; */
+  padding: 2em;
+  font-size: 1.2em;
+}
+.recipe-ingredients .ingredients-top img{
+  height: 122px;
+  width: 122px;
+  border-radius: 50%;
+  /* border: 2px solid #373737; */
+  position: relative;
+  top: -10em;
+}
+.ingredients-top h1{
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Grape Nuts', cursive;
+  color: #f4e6db;
+  font-size: 4em;
+  margin-top: -2em;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+.recipe-instructions p{
+  /* background-color: green; */
+  padding: 2em;
+  font-size: 1.1em;
+}
+.ingredients-top div{
+  /* background-color: rgba(0,0,0,0.5); */
+  /* background-color: #e9ceb8; */
+  background-image: url('../img/bg6.jpg');
+  background-size: cover;
+  margin-bottom: 0;
+  padding-top: 7em;
+}
+.ingredients-mid ul{
+  background-color: rgba(0,0,0,0.6);
+  margin-bottom: 0;
+  color: white;
+  /* padding-left: 3em; */
+  padding-top:2em;
+  padding-bottom:2em;
+  font-size: 1.1em;
+  list-style-type: none;
+}
+.ingredients-mid li{
+  margin-left: -2em;
+}
+/* .ingredients-bottom {
+  background-image: url('../img/blackboard.jpg');
+  background-size: cover;
+} */
+.ingredients-bottom ul{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  font-size: 1.2em;
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+.ingredients-bottom li{
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.ingredients-bottom h3{
+  padding-top: 2em;
+  padding-left: 2em;
+  color: #C8874D;
+  /* font-family: 'Homemade Apple', cursive; */
+}
+.ingredients-bottom button{
+  background-color: #C8874D;
+  border: none;
+  margin-top:3em;
+  padding: 1em 2em 1em 2em;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.ingredients-bottom button:hover{
+  background-color: #c07a3b;
+  /* transform: scale(1.03); */
+  transition: 0.5s;
+}
+.description p{
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 0;
+}
+.description h3{
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 0;
+  padding-top: 2em;
+  padding-left: 1.4em;
+  color: #C8874D;
+}
+.description ol{
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  list-style: none;
+  counter-reset: item;
+}
+.description p{
+  background-color: rgba(0,0,0,0.5);
+  padding-bottom: 0em;
+}
+ .description li {
+   counter-increment: item;
+   margin-bottom: 2em;
+ }
+ .description li:before {
+   margin-left: -25px;
+   margin-right: 25px;
+   content: counter(item);
+   background: #C8874D;
+   border-radius: 50%;
+   color: white;
+   font-weight: bold;
+   width: 1.5em;
+   text-align: center;
+   display: inline-block;
+ }
+ .notes{
+   background-color: rgba(0,0,0,0.5);
+   padding-top:2em;
+   padding-bottom: 2em;
+   padding-left: 2em;
+   padding-right: 4em;
+   font-size: 1.1em;
+ }
+.notes h3{
+  color: #C8874D;
+}
+ .notes ul{
+   list-style: none;
+ }
+ .notes li{
+   padding-top: 2em;
+ }
+ .notes i{
+   padding-right: 1em;
+   color: #C8874D;
+ }
+/*****************************/
+/****      Footer         ****/
+/*****************************/
+footer{
+  background-color: black;
+  padding-bottom: 2em;
+  padding-top:2em;
+}
+.info-developer{
+    color:white;
+}
+.info-developer a{
+  color: #D3AB7D;
+  text-decoration: none;
+}
+.info-developer a:hover{
+  color:#C8874D;
+}
+p.info-developer{
+  margin-bottom:-2em;
+  padding-top:2em;
+}
+footer i{
+  color: #D3AB7D;
+  font-size: 2em;
+  transition: 0.5s;
+}
+footer i:hover{
+  color: #C8874D;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+footer h2 > a{
+  font-family: 'Homemade Apple', cursive;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #C8874D;
+  padding-top: 1em;
+  transition: 0.5s;
+}
+footer h2 > a:hover{
+  /* font-size: 1.51em; */
+  color: #d8ab82;
+  transition: 0.5s;
+}
+/***************** For medium devices *****************/
+@media (max-width: 991px) {
+  .dropdown_menu li {
+    width: 50%;
+    margin-left:30%;
+  }
+  .title h1{
+    /* color:#C8874D;
+    padding-top: 1.2em;
+    padding-bottom:0.2em;
+    font-family: 'Homemade Apple', cursive; */
+    font-size: 3em;
+  }
+  .title h3{
+    font-size:1.4em;
+  }
+  .card-text{
+    padding-bottom: 2em;
+  }
+  .item-category{
+    padding-bottom: 4em;
+    padding-right: 1em;
+  }
+  .recipe-description p {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.1em;
+  }
+  .recipe-image{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+
+/********************/
+/*   Special sizes  */
+/********************/
+@media (max-width: 576px) {
+  .description li {
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+  .notes li {
+    margin-left: -2em;
+    margin-right: -2em;
+}
+}
+
+@media (max-width: 767px) {
+  .recipe-image{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 991px) {
+  .row{
+    --bs-gutter-x:0;
+  }
+  .recipe-description{
+    margin-top:1em;
+  }
+}
