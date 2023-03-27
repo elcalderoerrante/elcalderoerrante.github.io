@@ -718,7 +718,9 @@ input.gsc-input {
   margin-bottom: 0;
 }
 .ingredients-bottom ul li::before {
-  content: "\25C6";
+  /* content: "\25C6"; */
+  /* content: "\30C4"; */
+  content: "\2713";
   color: #C8874D;
   font-weight: bold;
   display: inline-block;
