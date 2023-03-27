@@ -543,7 +543,7 @@ input.gsc-input {
 .carousel-home a{
   text-decoration: none;
   font-family: 'Grape Nuts', cursive;
-  /* font-family: 'Caveat', cursive; */
+   /* font-family: 'Raleway', cursive; */
   color: #FBF6F2;
   font-size: 1.5em;
   transition:0.5s;
@@ -586,7 +586,7 @@ input.gsc-input {
  .category a{
    text-decoration: none;
    font-family: 'Grape Nuts', cursive;
-   /* font-family: 'Caveat', cursive; */
+   /* font-family: 'Raleway', cursive; */
    color: #FBF6F2;
    font-size: 1.5em;
    transition:0.5s;
@@ -634,7 +634,7 @@ input.gsc-input {
 /*************************************/
 
 .recipe-title h1{
-  /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Raleway', cursive; */
   font-family: 'Grape Nuts', cursive;
   color: #e9ceb8;
   font-size: 4em;
@@ -671,7 +671,7 @@ input.gsc-input {
   top: -10em;
 }
 .ingredients-top h1{
-  /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Raleway', cursive; */
   font-family: 'Grape Nuts', cursive;
   color: #f4e6db;
   font-size: 4em;
