@@ -596,6 +596,11 @@ input.gsc-input {
    /* font-size: 1.6em; */
    transition:0.5s;
  }
+ .category h5{
+   font-family: 'Grape Nuts', cursive;
+   font-size: 1.5em;
+   margin-top: -0.9em;
+ }
  .category .card-title{
    padding-left: 0;
  }
@@ -610,11 +615,11 @@ input.gsc-input {
 .img-hover-zoom img {
   transform-origin: 50% 50%;
   transition: transform 5s, filter 3s ease-in-out;
-  filter: brightness(80%);
+  filter: brightness(100%);
 }
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-  filter: brightness(100%);
+  filter: brightness(110%);
   transform: scale(1.2);
 }
 
@@ -681,6 +686,13 @@ input.gsc-input {
   margin-top: -2em;
   margin-bottom: 0;
   padding-bottom: 1em;
+}
+.ingredients-top h2{
+  font-family: 'Grape Nuts', cursive;
+  margin-top: -1.5em;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+  text-align: center;
 }
 .recipe-instructions p{
   /* background-color: green; */
