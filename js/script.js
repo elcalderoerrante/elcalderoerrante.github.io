@@ -67,7 +67,6 @@ $(window).on('load', function() {
    ["😋","Saboreando"],
    ["🤞🏾","Cruzando dedos"],
    ["☝🏽","Poniendo el último ingrediente"],
-   ["👃🏻","Olfateando olores"],
  ]
  $(document).ready(function() {
    var cycleLoader = function() {
