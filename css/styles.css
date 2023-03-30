@@ -922,6 +922,9 @@ footer h2 > a:hover{
     margin-left: -2em;
     margin-right: -2em;
 }
+  .category .card-title {
+    margin-top: 0.9em;
+  }
 }
 
 @media (max-width: 767px) {
