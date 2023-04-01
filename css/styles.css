@@ -924,14 +924,17 @@ footer h2 > a:hover{
     margin-left: -2em;
     margin-right: -2em;
   }
-  .category a {
-    font-size: 1.2em;
+  .category i{
+    font-size: 0.9em;
   }
   .category .card-title {
     margin-top: 0em;
   }
   .category .card-body{
     padding-left: 0em;
+  }
+  .category h5{
+    font-size: 1.3em;
   }
   .main-page-category{
     padding-top: 1em;
