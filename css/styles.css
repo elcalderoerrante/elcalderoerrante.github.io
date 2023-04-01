@@ -931,7 +931,16 @@ footer h2 > a:hover{
   .main-page-category{
     padding-top: 1em;
   }
-
+  .owl-carousel .owl-next{
+    right:-0.2em;
+    width: 30px;
+    height: 30px;
+  }
+  .owl-carousel .owl-prev{
+    left:-0.2em;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 767px) {
