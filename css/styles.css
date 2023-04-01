@@ -607,6 +607,7 @@ input.gsc-input {
  }
  .category i{
    font-family: 'Homemade Apple', cursive;
+   word-spacing: 0.3em;
  }
 /* HOVER ZOOM [1] The container */
 .img-hover-zoom {
@@ -922,7 +923,10 @@ footer h2 > a:hover{
   .notes li {
     margin-left: -2em;
     margin-right: -2em;
-}
+  }
+  .category a {
+    font-size: 1.2em;
+  }
   .category .card-title {
     margin-top: 0em;
   }
