@@ -942,6 +942,24 @@ footer h2 > a:hover{
     width: 30px;
     height: 30px;
   }
+  .ingredients-mid ul {
+    font-size: 1em;
+  }
+  .recipe-title h1{
+    font-size: 3em;
+  }
+  .ingredients-top h1 {
+    font-size:3em;
+  }
+  .ingredients-bottom ul{
+    font-size: 1em;
+  }
+  .recipe-description p{
+    font-size: 1em;
+  }
+  .description ol{
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 767px) {
