@@ -923,11 +923,15 @@ footer h2 > a:hover{
     margin-right: -2em;
 }
   .category .card-title {
-    margin-top: 0.9em;
+    margin-top: 0em;
   }
   .category .card-body{
     padding-left: 0em;
   }
+  .main-page-category{
+    padding-top: 1em;
+  }
+
 }
 
 @media (max-width: 767px) {
