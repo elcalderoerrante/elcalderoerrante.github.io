@@ -86,6 +86,8 @@ $(window).on('load', function() {
    ["✨","Haciendo magia"],
    ["🌱","Plantando semillas"],
    ["⚗️","Inventando algo nuevo"],
+   [" ¯\\_(ツ)_/¯ ", "No sé"],
+   ["¯\\_(ツ)_/¯", "QUÉ HACE ESTO AQUÍ"],
  ]
  $(document).ready(function() {
    var cycleLoader = function() {
