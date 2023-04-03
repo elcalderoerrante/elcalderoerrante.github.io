@@ -246,6 +246,12 @@ h4{
 .nav-item a.active:hover{
   color:#D3AB7D;
 }
+.language a{
+  color: #ffffff;
+}
+.language a:hover{
+  color: #D3AB7D;
+}
 /****   Dropdown menu   ****/
 .dropdown {
   padding: 20px 40px;
@@ -631,6 +637,7 @@ input.gsc-input {
 .category-title h1{
   border-bottom: solid #C8874D;
   color: #FBF6F2;
+  font-size: 3em;
 }
 .item-category{
   padding-bottom: 4em;
@@ -935,6 +942,9 @@ footer h2 > a:hover{
   }
   .category h5{
     font-size: 1.3em;
+  }
+  .category-title h1{
+    font-size: 2em;
   }
   .main-page-category{
     padding-top: 1em;
