@@ -759,6 +759,7 @@ input.gsc-input {
 .ingredients-bottom li{
   padding-bottom: 0.5em;
   padding-top: 0.5em;
+  padding-right: 0.5em;
 }
 .ingredients-bottom h3{
   padding-top: 2em;
