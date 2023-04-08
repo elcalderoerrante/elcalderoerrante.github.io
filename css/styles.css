@@ -812,8 +812,8 @@ input.gsc-input {
    margin-bottom: 2em;
  }
  .description li:before {
-   margin-left: -25px;
-   margin-right: 25px;
+   margin-left:-3em;
+   margin-right: 1.2em;
    content: counter(item);
    background: #C8874D;
    border-radius: 50%;
@@ -836,6 +836,7 @@ input.gsc-input {
 }
  .notes ul{
    list-style: none;
+   padding: 0;
  }
  .notes li{
    padding-top: 2em;
@@ -844,6 +845,7 @@ input.gsc-input {
    padding-right: 1em;
    color: #C8874D;
  }
+
  .notes a{
    color: #D3AB7D;
    text-decoration: none;
