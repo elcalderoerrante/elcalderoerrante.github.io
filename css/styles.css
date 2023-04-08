@@ -825,7 +825,7 @@ input.gsc-input {
  }
  .notes{
    background-color: rgba(0,0,0,0.5);
-   padding-top:2em;
+   padding-top:0em;
    padding-bottom: 2em;
    padding-left: 2em;
    padding-right: 4em;
@@ -837,6 +837,7 @@ input.gsc-input {
  .notes ul{
    list-style: none;
    padding: 0;
+
  }
  .notes li{
    padding-top: 2em;
