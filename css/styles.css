@@ -796,8 +796,8 @@ input.gsc-input {
   background-color: rgba(0,0,0,0.5);
   padding-top: 2em;
   padding-bottom: 2em;
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 5em;
+  padding-right: 3em;
   font-size: 1.1em;
   margin-bottom: 0;
   list-style: none;
@@ -938,12 +938,12 @@ footer h2 > a:hover{
 /********************/
 @media (max-width: 576px) {
   .description li {
-    margin-left: -2em;
+    margin-left: -1.2em;
     margin-right: -2em;
   }
   .notes li {
-    margin-left: -2em;
-    margin-right: -2em;
+    margin-left: -1.2em;
+    margin-right: -3em;
   }
   .category i{
     font-size: 0.9em;
