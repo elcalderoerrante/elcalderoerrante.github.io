@@ -840,11 +840,13 @@ input.gsc-input {
 
  }
  .notes li{
-   padding-top: 2em;
+   padding-top: 0.5em;
+   margin-right:-2em;
  }
  .notes i{
-   padding-right: 1em;
+   padding-right: 0.2em;
    color: #C8874D;
+   padding-top: 0.5em;
  }
  .notes a{
    color: #D3AB7D;
@@ -944,6 +946,15 @@ footer h2 > a:hover{
   .notes li {
     margin-left: -1.2em;
     margin-right: -3em;
+  }
+  .notes h3{
+    margin-left: -1em;
+  }
+  .notes i{
+    margin-left: -1em;
+  }
+  .notes{
+    font-size:1em;
   }
   .category i{
     font-size: 0.9em;
