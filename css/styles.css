@@ -892,12 +892,32 @@ footer h2 > a{
   text-decoration: none;
   font-size: 1.5em;
   color: #C8874D;
-  padding-top: 1em;
+  /* padding-top: 1em; */
   transition: 0.5s;
 }
 footer h2 > a:hover{
   /* font-size: 1.51em; */
   color: #d8ab82;
+  transition: 0.5s;
+}
+footer h2{
+  padding-top: 1em;
+}
+footer h3{
+  padding-top: 2em;
+}
+footer ul{
+  list-style-type: none;
+}
+footer li > a{
+  text-decoration: none;
+  color: #D3AB7D;
+  margin-left: -1em;
+  transition: 0.5s;
+  font-size:1.1em;
+}
+footer li > a:hover{
+  color: #C8874D;
   transition: 0.5s;
 }
 /***************** For medium devices *****************/
@@ -939,6 +959,9 @@ footer h2 > a:hover{
 /*   Special sizes  */
 /********************/
 @media (max-width: 576px) {
+  footer h4{
+    padding-top: 3em;
+  }
   .description li {
     margin-left: -1.2em;
     margin-right: -2em;
