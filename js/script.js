@@ -52,7 +52,7 @@ $(window).on('load', function() {
    ["🥑","Rebanando aguacates"],
    ["🍌","Pelando plátanos"],
    ["🍔","Volteando hamburgesas"],
-   ["🍻","Chocando tasas"],
+   ["🍻","Chocando tazas"],
    ["🍴","Puliendo cubiertos"],
    ["🍪","Horneando galletas"],
    ["🍣","Enrollando sushi"],
