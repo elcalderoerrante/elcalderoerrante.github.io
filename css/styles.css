@@ -246,6 +246,10 @@ h4{
 .nav-item a.active:hover{
   color:#D3AB7D;
 }
+.language{
+  padding-left:0;
+  padding-right:0;
+}
 .language a{
   color: #ffffff;
 }
@@ -619,6 +623,9 @@ input.gsc-input {
    font-family: 'Homemade Apple', cursive;
    word-spacing: 0.3em;
  }
+ .category span{
+   padding-top: 2em
+ }
 /* HOVER ZOOM [1] The container */
 .img-hover-zoom {
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
@@ -921,7 +928,7 @@ footer li > a:hover{
   transition: 0.5s;
 }
 /***************** For medium devices *****************/
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .dropdown_menu li {
     width: 60%;
     margin-left:30%;
@@ -958,10 +965,19 @@ footer li > a:hover{
 /********************/
 /*   Special sizes  */
 /********************/
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   footer h4{
     padding-top: 3em;
   }
+  .category span{
+    padding-top: 0em
+  }
+  /* .card-body p{
+    padding-left: 1em;
+  }
+  .card-body .card-title{
+    padding-left:0.5em;
+  } */
   .description li {
     margin-left: -1.2em;
     margin-right: -2em;
