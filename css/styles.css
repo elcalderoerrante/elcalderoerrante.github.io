@@ -683,7 +683,7 @@ input.gsc-input {
   padding-left: 0;
   padding-right: 0;
   background-image: url('../img/blackboard.jpg');
-  background-size: cover;
+  background-size:cover;
 }
 .recipe-ingredients p{
   /* background-color: blue; */
@@ -1044,6 +1044,9 @@ footer li > a:hover{
   }
   .ingredients-bottom ul{
     font-size: 1em;
+  }
+  .instructions-subtitle{
+    margin-left: -3em;
   }
   .recipe-description p{
     font-size: 1em;
