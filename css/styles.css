@@ -788,6 +788,16 @@ input.gsc-input {
   /* transform: scale(1.03); */
   transition: 0.5s;
 }
+.ingredients-subtitle{
+  color: #d8ab82;
+  padding-left:3em;
+  padding-top: 1em;
+}
+.instructions-subtitle{
+  color: #d8ab82;
+  /* padding-left: 3em; */
+  padding-bottom: 1em;
+}
 .description p{
   background-color: rgba(0,0,0,0.5);
   margin-bottom: 0;
