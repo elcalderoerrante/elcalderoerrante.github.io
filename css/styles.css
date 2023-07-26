@@ -494,7 +494,8 @@ input.gsc-input {
 		right: 0;
 		width: 100%;
 		height: 30%;
-		/* background-color: blue; */
+    margin-bottom: -100px;
+		 /* background-color: blue;  */
 	}
 }
 #recipe-carousel {
