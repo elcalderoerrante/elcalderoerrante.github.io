@@ -686,6 +686,10 @@ input.gsc-input {
   background-image: url('../img/blackboard.jpg');
   background-size:cover;
 }
+.recipe-ingredients a{
+  color: #D3AB7D;
+  text-decoration: none;
+}
 .recipe-ingredients p{
   /* background-color: blue; */
   padding: 2em;
