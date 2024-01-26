@@ -845,6 +845,13 @@ input.gsc-input {
    text-align: center;
    display: inline-block;
  }
+ .description a{
+   color: #D3AB7D;
+   text-decoration: none;
+ }
+ .description a:hover{
+    color: #C8874D;
+ }
  .notes{
    background-color: rgba(0,0,0,0.5);
    padding-top:0em;
