@@ -724,6 +724,10 @@ input.gsc-input {
   padding: 2em;
   font-size: 1.1em;
 }
+.multiple-steps {
+  color: #d8ab82;
+  padding-bottom: 1em;
+}
 .ingredients-top div{
   /* background-color: rgba(0,0,0,0.5); */
   /* background-color: #e9ceb8; */
